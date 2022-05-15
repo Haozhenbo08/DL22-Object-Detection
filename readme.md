@@ -1,3 +1,6 @@
+# Descriptin of the Project #
+In this project, we explore self-supervised learning method on unlabelled data (using Barlow Twin's Method). Then, we use the pretrained backbone to train a Faster RCNN model on labelled data for object detection.
+
 # How to run the code ##
 
 1. A simple test:
