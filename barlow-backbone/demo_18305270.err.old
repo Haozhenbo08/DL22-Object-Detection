@@ -1,0 +1,33 @@
+Could not find conda environment: dev
+You can list all discoverable environments with `conda info --envs`.
+
+/ext3/miniconda3/lib/python3.9/site-packages/torchvision/transforms/transforms.py:890: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/rsc468/barlow-backbone/main.py", line 12, in <module>
+    model_dict,model=barlow.getTrainedBarlowModel(1)
+  File "/home/rsc468/barlow-backbone/barlow.py", line 233, in getTrainedBarlowModel
+    loss = model.forward(y1, y2)
+  File "/home/rsc468/barlow-backbone/barlow.py", line 179, in forward
+    z2 = self.projector(self.backbone(y2))
+  File "/ext3/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/ext3/miniconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 283, in forward
+    return self._forward_impl(x)
+  File "/ext3/miniconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 273, in _forward_impl
+    x = self.layer3(x)
+  File "/ext3/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/ext3/miniconda3/lib/python3.9/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/ext3/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/ext3/miniconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 153, in forward
+    out = self.bn3(out)
+  File "/ext3/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/ext3/miniconda3/lib/python3.9/site-packages/torch/nn/modules/batchnorm.py", line 168, in forward
+    return F.batch_norm(
+  File "/ext3/miniconda3/lib/python3.9/site-packages/torch/nn/functional.py", line 2421, in batch_norm
+    return torch.batch_norm(
+RuntimeError: CUDA out of memory. Tried to allocate 72.00 MiB (GPU 0; 15.78 GiB total capacity; 14.45 GiB already allocated; 10.00 MiB free; 14.54 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
