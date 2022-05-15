@@ -1,6 +1,0 @@
-Could not find conda environment: dev
-You can list all discoverable environments with `conda info --envs`.
-
-/ext3/miniconda3/lib/python3.9/site-packages/torchvision/transforms/transforms.py:890: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
-  warnings.warn(
-slurmstepd: error: *** JOB 18305778 ON gr054 CANCELLED AT 2022-04-20T03:00:46 ***
