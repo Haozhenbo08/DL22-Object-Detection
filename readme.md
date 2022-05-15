@@ -16,7 +16,6 @@ Then, with the loaded backbone, the Faster RCNN will be trained on labeled data 
 The default setting of `main.py` is `model = get_model(num_classes, pretrained_backbone=False)`.
 
 # How to run the code (For TA) ##
-
 1. A simple test:
 Upload the code to greene, then run sbatch demo.sh. It will train a backbone model by Barlow Twin's method for only 1 epoch on unlabeled data, store it at `"/backbone/model.pth"`. The trained model is then used to construct a Faster RCNN model. The Faster RCNN is then trained on labeled data for only 1 epoch, stored at `"/frcnn.pth"`, and print out the evaluation result. 
 
